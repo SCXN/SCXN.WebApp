@@ -391,6 +391,11 @@ router.get('/easy', solutions, function(req, res) {
   });
 });
 
+//REDIRECT
+router.get('/Projects', solutions, function(req, res) {
+  res.redirect('https:scxn.github.io/projects');
+});
+
 //POST messages
 router.post('/send', (req, res, ) => {
   let form = new multiparty.Form();
